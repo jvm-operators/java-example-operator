@@ -1,0 +1,13 @@
+apiVersion: io.acme/v1
+kind: Example
+metadata:
+  name: my-x
+spec:
+  color: blue
+  memory: 128Mi
+  cpu: 0.5
+  env:
+  - name: FOO
+    value: bar
+  - name: PATH
+    value: /bin
