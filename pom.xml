@@ -6,7 +6,7 @@
 <parent>
     <groupId>io.radanalytics</groupId>
     <artifactId>operator-parent-pom</artifactId>
-    <version>0.3.11</version>
+    <version>0.3.23</version>
 </parent>
 <modelVersion>4.0.0</modelVersion>
 <groupId>io.acme</groupId>
@@ -15,7 +15,7 @@
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <abstract-operator.version>0.5.2</abstract-operator.version>
+    <abstract-operator.version>0.6.10</abstract-operator.version>
 </properties>
 
 <dependencies>
@@ -38,10 +38,6 @@
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-shade-plugin</artifactId>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
         </plugin>
         <plugin>
@@ -51,6 +47,10 @@
         <plugin>
             <groupId>org.jsonschema2pojo</groupId>
             <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-maven-plugin</artifactId>
         </plugin>
     </plugins>
 </build>
